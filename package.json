@@ -1,5 +1,5 @@
 {
-  "name": "ymdf-converter",
+  "name": "ymdh-converter",
   "version": "1.0.0",
   "description": "My geometric Nuxt.js project",
   "author": "toywonder",
@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "@nuxtjs/bulma": "^1.2.1",
+    "deploy": "^1.0.3",
+    "firebase": "^6.2.2",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {

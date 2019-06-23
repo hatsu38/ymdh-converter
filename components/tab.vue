@@ -3,7 +3,7 @@
   <ul>
     <router-link tag="li" to="/" exact-active-class="is-active">
       <a href="/">
-        <span>YMDF変換器</span>
+        <span>YMDH変換器</span>
       </a>
     </router-link>
     <router-link tag="li" to="/timeconvert" exact-active-class="is-active">
@@ -19,7 +19,7 @@
 export default {
   date: function(){
     return {
-      ymdfConvert: true,
+      ymdhConvert: true,
       datetimeConvert: false
     }
   },
@@ -28,10 +28,10 @@ export default {
   methods: {
     tab: function(pathname){
       if(pathname == "/"){
-      this.ymdfConvert = true
+      this.ymdhConvert = true
       this.datetimeConvert = false
       } else if(pathname == "/timeconvert"){
-        this.ymdfConvert = false
+        this.ymdhConvert = false
         this.datetimeConvert = true
       }
     }
