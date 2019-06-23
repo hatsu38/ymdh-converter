@@ -9,9 +9,9 @@
     <tab />
     <div class="field">
       <ul>
-        <li><input type="text" class="input is-primary hour-field" v-model="hour">時間を</li>
-        <li><input type="text" class="input is-primary take-datetime-field" v-model="howDate">日で達成するには1日<strong>「{{takeTime}}」</strong>時間</li>
-        <li>1日<input type="text" class="input is-primary  take-datetime-field" v-model="ondDayTime">時間やるなら<strong>「{{takeDates}}」</strong>日かかる</li>
+        <li><input type="number" class="input is-primary hour-field" v-model="hour">時間を</li>
+        <li><input type="number" class="input is-primary take-datetime-field" v-model="howDate">日で達成するには1日<strong>「{{takeTime}}」</strong>時間</li>
+        <li>1日<input type="number" class="input is-primary  take-datetime-field" v-model="ondDayTime">時間やるなら<strong>「{{takeDates}}」</strong>日かかる</li>
       </ul>
     </div>
   </section>

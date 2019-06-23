@@ -9,7 +9,7 @@
     <tab />
     <form id="converter">
       <div class="field">
-        <input type="text" class="input is-primary" v-model="ymdhNum">
+        <input type="number" class="input is-primary" v-model="ymdhNum" min="0">
         <div class="select">
           <select v-model="ymdh">
             <option>年</option>
