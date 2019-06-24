@@ -23,8 +23,6 @@ export default {
       datetimeConvert: false
     }
   },
-  created () {
-  },
   methods: {
     tab: function(pathname){
       if(pathname == "/"){

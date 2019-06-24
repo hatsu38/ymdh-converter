@@ -1,9 +1,8 @@
 <template>
   <section class="container">
     <nav class="navbar" role="navigation" aria-label="main navigation">
-      <h2 class="subtitle">
-        時間-日付変換器
-      </h2>
+      <img src="logo_img.png" class="logo-title">
+      <h2 class="subtitle">時間-日付変換器</h2>
     </nav>
     <logo/>
     <tab />
@@ -14,17 +13,20 @@
         <li>1日<input type="number" class="input is-primary  take-datetime-field" v-model="ondDayTime">時間やるなら<strong>「{{takeDates}}」</strong>日かかる</li>
       </ul>
     </div>
+    <sharebtn />
   </section>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
 import tab from '~/components/tab.vue'
+import sharebtn from '~/components/sharebtn.vue'
 
 export default {
   components: {
     Logo,
-    tab
+    tab,
+    sharebtn
   },
   data: function(){
     return{
@@ -72,6 +74,9 @@ ul li{
   align-items: center;
   text-align: center;
 }
-
+.subtitle{
+  padding-top: 2px;
+  font-size: 24px;
+}
 </style>
 

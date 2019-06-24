@@ -1,9 +1,8 @@
 <template>
   <section class="container">
     <nav class="navbar" role="navigation" aria-label="main navigation">
-      <h2 class="subtitle">
-        YMDH変換器
-      </h2>
+      <img src="logo_img.png" class="logo-title">
+      <h2 class="subtitle">YMDH変換器</h2>
     </nav>
     <logo/>
     <tab />
@@ -14,6 +13,7 @@
           <select v-model="ymdh">
             <option>年</option>
             <option>ヶ月</option>
+            <option>時間</option>
             <option>日</option>
             <option>分</option>
             <option>秒</option>
@@ -21,7 +21,7 @@
         </div>
       </div>
     </form>
-    <h3 class="is-size-4 has-text-dark">「{{ ymdhNum }} {{ ymdh }}」を変換します</h3>
+    <h3 class="is-size-4">「{{ ymdhNum }} {{ ymdh }}」を変換します</h3>
     <table class="table is-bordered is-fullwidth is-hoverable">
       <tbody class="tbody">
         <tr class="tr">
@@ -44,17 +44,20 @@
         </tr>
       </tbody>
     </table>
+    <sharebtn />
   </section>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
 import tab from '~/components/tab.vue'
+import sharebtn from '~/components/sharebtn.vue'
 
 export default {
   components: {
     Logo,
-    tab
+    tab,
+    sharebtn
   },
   data: function(){
     return{
@@ -77,7 +80,7 @@ export default {
           return Number(this.ymdhNum / 12.000).toFixed(3)
         case '日':
           return Number(this.ymdhNum / 365.000).toFixed(3)
-        case '時':
+        case '時間':
           return Number(this.ymdhNum / (365 * 24)).toFixed(3)
         case '分':
           return Number(this.ymdhNum / (365 * 24 * 60)).toFixed(3)
@@ -93,7 +96,7 @@ export default {
           return Number(this.ymdhNum)
         case '日':
           return Number(this.ymdhNum / 30.41667).toFixed(3)
-        case '時':
+        case '時間':
           return Number(this.ymdhNum / (30.41667 * 24)).toFixed(3)
         case '分':
           return Number(this.ymdhNum / (30.41667 * 24 * 60)).toFixed(3)
@@ -109,7 +112,7 @@ export default {
           return Number(this.ymdhNum * 30.41667).toFixed(3)
         case '日':
           return this.ymdhNum
-        case '時':
+        case '時間':
           return Number(this.ymdhNum / 24).toFixed(3)
         case '分':
           return Number(this.ymdhNum / (24 * 60)).toFixed(3)
@@ -125,7 +128,7 @@ export default {
           return Number(this.ymdhNum * 24 * 30.41667).toFixed(3)
         case '日':
           return Number(this.ymdhNum * 24).toFixed(3)
-        case '時':
+        case '時間':
           return this.ymdhNum
         case '分':
           return Number(this.ymdhNum / 24 ,1)
@@ -141,7 +144,7 @@ export default {
           return Number(this.ymdhNum * (60 * 24 * 30.41667)).toFixed(3)
         case '日':
           return Number(this.ymdhNum * (60 * 24)).toFixed(3)
-        case '時':
+        case '時間':
           return Number(this.ymdhNum * 60).toFixed(3)
         case '分':
           return this.ymdhNum
@@ -157,7 +160,7 @@ export default {
           return Number(this.ymdhNum * 60  * 60 * 24 * 30.41667).toFixed(3)
         case '日':
           return Number(this.ymdhNum * 60 * 60 * 24).toFixed(3)
-        case '時':
+        case '時間':
           return Number(this.ymdhNum * 60 * 60).toFixed(3)
         case '分':
           return Number(this.ymdhNum * 60).toFixed(3)
@@ -186,10 +189,10 @@ function openTab(evt, tabName) {
 h3{
   font-size: 18px;
   font-weight: bold;
+  color:#526488;
 }
 .input{
   width:  70%;
 }
-
 </style>
 

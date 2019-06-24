@@ -56,6 +56,7 @@ html {
   min-height: 100vh;
   display: block;
   width: 95%;
+  max-width: 650px;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -71,10 +72,17 @@ html {
 }
 
 .subtitle {
-  font-weight: 300;
-  font-size: 32px;
+  font-weight: bold;
+  font-size: 27px;
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
+}
+nav{
+  display: flex;
+  margin: 0 auto;
+}
+.logo-title{
+  height: 37px;
 }
 </style>
