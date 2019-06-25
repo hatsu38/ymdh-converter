@@ -9,7 +9,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' },
+      { hid: 'description', name: 'description', content: 'YMDH変換器は、年-月-日-時-分-秒を簡単に変換できるサービスです' },
       { name: "msapplication-square70x70logo", content: "/site-tile-70x70.png" },
       { name: "msapplication-square150x150logo", content: "/site-tile-150x150.png" },
       { name: "msapplication-wide310x150logo", content: "/site-tile-310x150.png" },
@@ -20,7 +20,8 @@ export default {
       { property: "og:title", content: "YMDH変換器" },
       { property: "og:description", content: "YMDH変換器は、年-月-日-時-分-秒を簡単に変換できるサービスです" },
       { property: "og:site_name", content: "YMDH変換器" },
-      { property: "og:image", content: "https://ymdh-converter.web.app/logo.png" }
+      { property: "og:image", content: "https://ymdh-converter.web.app/ogp_img.png" },
+      { name: "twitter:card", content: "Large Image Summary Card"}
     ],
     link: [
       { href: "https://use.fontawesome.com/releases/v5.6.1/css/all.css", rel: "stylesheet"},

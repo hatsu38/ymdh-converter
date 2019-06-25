@@ -47,7 +47,7 @@ ul .share-btn{
   display: inline-block;
   position: relative;
   font-family: Arial;
-  font-size: 21px;
+  font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
