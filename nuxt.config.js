@@ -85,7 +85,14 @@ export default {
   modules: [
     // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
     '@nuxtjs/bulma',
-    'nuxt-fontawesome'
+    'nuxt-fontawesome',
+    [
+      '@nuxtjs/google-analytics',
+      {
+        id: "UA-81051454-18",
+        debug: true //本番環境以外でもGAを有効にしたい場合はtrueに。
+      }
+    ]
   ],
   fontawesome: {
     imports: [
