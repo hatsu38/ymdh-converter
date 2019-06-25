@@ -3,6 +3,16 @@
     <nuxt />
   </div>
 </template>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-81051454-18"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-81051454-18');
+  ga('set', 'userId', 'USER_ID'); // ログインしている user_id を使用してUser-ID を設定します。
+</script>
 
 <style>
 html {
