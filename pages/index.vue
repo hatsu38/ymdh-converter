@@ -8,7 +8,7 @@
     <tab />
     <form id="converter">
       <div class="field">
-        <input type="number" class="input is-primary" v-model="ymdhNum" min="0">
+        <input type="number" class="input ymdh-feild is-primary" v-model="ymdhNum" min="0">
         <div class="select">
           <select v-model="ymdh">
             <option>年</option>
@@ -191,7 +191,7 @@ h3{
   font-weight: bold;
   color:#526488;
 }
-.input{
+.ymdh-feild{
   width:  70%;
 }
 </style>
