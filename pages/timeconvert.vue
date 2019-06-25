@@ -7,10 +7,10 @@
     <logo/>
     <tab />
     <div class="field">
-      <ul>
-        <li><input type="number" class="input is-primary hour-field" v-model="hour">時間を</li>
-        <li><input type="number" class="input is-primary take-datetime-field" v-model="howDate">日で達成するには1日<strong>「{{takeTime}}」</strong>時間</li>
-        <li>1日<input type="number" class="input is-primary  take-datetime-field" v-model="ondDayTime">時間やるなら<strong>「{{takeDates}}」</strong>日かかる</li>
+      <ul class="time-concerter-fields">
+        <li><input type="number" class="input time-concerter-field is-primary hour-field" v-model="hour">時間を</li>
+        <li><input type="number" class="input time-concerter-field take-datetime-field" v-model="howDate">日で達成するには1日<strong>「{{takeTime}}」</strong>時間</li>
+        <li>1日<input type="number" class="input time-concerter-field take-datetime-field" v-model="ondDayTime">時間やるなら<strong>「{{takeDates}}」</strong>日かかる</li>
       </ul>
     </div>
     <sharebtn />
@@ -62,8 +62,20 @@ ul li{
 .hour-field{
   width:  80px;
 }
+.time-concerter-field{
+  border: none;
+  border-bottom: 1px solid #00d1b2;
+  box-shadow: none;
+  border-radius: 0;
+  height: auto;
+  padding: 0 5px;
+}
+.time-concerter-field:hover{
+  border: none;
+  border-bottom: 1px solid #00d1b2;
+}
 .take-datetime-field{
-  width: 45px;
+  width: 50px;
 }
 .container {
   min-height: 100vh;
