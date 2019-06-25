@@ -11,7 +11,7 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-81051454-18');
-  ga('set', 'userId', 'USER_ID'); // ログインしている user_id を使用してUser-ID を設定します。
+  gtag('set', {'user_id': 'USER_ID'}); // ログインしている user_id を使用してUser-ID を設定します。
 </script>
 
 <style>
