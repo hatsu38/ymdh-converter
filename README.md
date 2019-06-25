@@ -1,6 +1,8 @@
-# ymdh-converter
+# YMDH変換器
 
-> My geometric Nuxt.js project
+> MDH変換器は、年-月-日-時-分-秒を簡単に変換できるサービスです
+
+![Demo](https://raw.githubusercontent.com/wiki/toywonder/ymdh-converter/images/ydmh-converter_sample.gif)
 
 ## Build Setup
 
@@ -18,5 +20,3 @@ $ yarn start
 # generate static project
 $ yarn run generate
 ```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
