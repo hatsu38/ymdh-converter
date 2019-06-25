@@ -21,7 +21,7 @@ export default {
       { property: "og:description", content: "YMDH変換器は、年-月-日-時-分-秒を簡単に変換できるサービスです" },
       { property: "og:site_name", content: "YMDH変換器" },
       { property: "og:image", content: "https://ymdh-converter.web.app/ogp_img.png" },
-      { name: "twitter:card", content: "Large Image Summary Card"}
+      { name: "twitter:card", content: "summary_large_image"}
     ],
     link: [
       { href: "https://use.fontawesome.com/releases/v5.6.1/css/all.css", rel: "stylesheet"},
