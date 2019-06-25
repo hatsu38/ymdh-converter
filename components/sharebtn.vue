@@ -3,17 +3,17 @@
     <h3 class="subtitle">シェア</h3>
     <ul class="share-btn-block">
       <li class="share-btn">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https://ymdh-converter.firebaseapp.com/" title="Facebookでシェア" target="_blank" rel="nofollow" class="share-link facebook">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://ymdh-converter.web.app/" title="Facebookでシェア" target="_blank" rel="nofollow" class="share-link facebook">
           <i class="fab fa-facebook-f"></i>
         </a>
       </li>
       <li class="share-btn">
-        <a href="http://twitter.com/share?url=https://ymdh-converter.firebaseapp.com/&hashtags=YMDH変換器&text=YMDH変換器は、年-月-日-時-分-秒を簡単に変換できるサービスです" title="Twitterでシェア" target="_blank" rel="nofollow" class="share-link twitter">
+        <a href="http://twitter.com/share?url=https://ymdh-converter.web.app/&hashtags=YMDH変換器&text=YMDH変換器は、年-月-日-時-分-秒を簡単に変換できるサービスです" title="Twitterでシェア" target="_blank" rel="nofollow" class="share-link twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
       <li class="share-btn">
-        <a href="http://line.me/R/msg/text/?https://ymdh-converter.firebaseapp.com/" title="LINEに送る" target="_blank" rel="nofollow" class="share-link line">
+        <a href="http://line.me/R/msg/text/?https://ymdh-converter.web.app/" title="LINEに送る" target="_blank" rel="nofollow" class="share-link line">
           <i class="fab fa-line"></i>
         </a>
       </li>
