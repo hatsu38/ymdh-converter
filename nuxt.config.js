@@ -15,12 +15,12 @@ export default {
       { name: "msapplication-wide310x150logo", content: "/site-tile-310x150.png" },
       { name: "msapplication-square310x310logo", content: "/site-tile-310x310.png" },
       { name: "msapplication-TileColor", content: "#0078d7" },
-      { property: "og:url", content: "https://ymdh-converter.web.app/" },
+      { property: "og:url", content: "ymdh-converter.firebaseapp.com/" },
       { property: "og:type", content: " website" },
       { property: "og:title", content: "YMDH変換器" },
       { property: "og:description", content: "YMDH変換器は、年-月-日-時-分-秒を簡単に変換できるサービスです" },
       { property: "og:site_name", content: "YMDH変換器" },
-      { property: "og:image", content: "https://ymdh-converter.web.app/ogp_img.png" },
+      { property: "og:image", content: "ymdh-converter.firebaseapp.com/ogp_img.png" },
       { name: "twitter:card", content: "summary_large_image"}
     ],
     link: [
